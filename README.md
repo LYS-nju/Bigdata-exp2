@@ -14,7 +14,7 @@
 
 ```text
 Bigdata-exp2/
-├── src/main/java/lab2/
+├── src/
 │   ├── Data.java
 │   ├── Task1.java
 │   ├── Task2.java
@@ -35,6 +35,8 @@ Bigdata-exp2/
 ├── .gitignore
 └── README.md
 ```
+
+Java 源文件直接放在 `src/` 下，Maven 已配置该目录为源码目录，可使用 `mvn clean package` 编译。手工编译时，源文件参数使用 `src/*.java`。文件中的 `package lab2` 保留，因此 Hadoop 提交入口仍为 `lab2.Task1`～`lab2.Task5`。
 
 ## 三、设计思路与运行结果
 
